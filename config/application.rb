@@ -24,6 +24,21 @@ module TechTraderBackend
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
 
+    Rails.application.config.middleware.insert_before 0, Rack::Cors do
+      allow do
+        origins '*'
+        resource '*', headers: :any, methods: [:get, :post, :patch, :put]
+      end
+    end
+
+    config.generators do |g|
+      g.template_engine nil 
+      g.test_framework nil
+      g.assets false
+      g.helper false
+      g.stylesheets false
+    end
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
