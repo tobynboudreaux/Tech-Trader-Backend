@@ -7,10 +7,10 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-Product.create(name: 'Macbook Air', description: 'lightweight personal laptop for productivity', image: 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6366/6366606_sd.jpg;maxHeight=200;maxWidth=300')
-Product.create(name: 'MSI GS66', description: 'Great gaming laptop for traversal', image: 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6409/6409057_sd.jpg;maxHeight=200;maxWidth=300')
-Product.create(name: 'iPhone 11', description: "same phone we've been selling you for years", image: 'https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/SOL-55304-shop-iphone11-carrier-106455.jpg')
-Product.create(name: 'Samsung Galaxy Note 20', description: "Now with extra stuff you don't need!", image: 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6424/6424230_sd.jpg;maxHeight=200;maxWidth=300')
+Product.create(name: 'Macbook Air', description: 'lightweight personal laptop for productivity', image: 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6366/6366606_sd.jpg;maxHeight=200;maxWidth=300', category: 'pc', price: 1000)
+Product.create(name: 'MSI GS66', description: 'Great gaming laptop for traversal', image: 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6409/6409057_sd.jpg;maxHeight=200;maxWidth=300', category: 'pc', price: 1800)
+Product.create(name: 'iPhone 11', description: "same phone we've been selling you for years", image: 'https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/SOL-55304-shop-iphone11-carrier-106455.jpg', category: 'mobile device', price: 1300)
+Product.create(name: 'Samsung Galaxy Note 20', description: "Now with extra stuff you don't need!", image: 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6424/6424230_sd.jpg;maxHeight=200;maxWidth=300', category: 'mobile device', price: 1200)
 
 
 Like.create(product_id: 1)
