@@ -19,5 +19,4 @@ class ApiController < ApplicationController
         response = http.request(request)
         render json: response.body
     end
-test
 end
